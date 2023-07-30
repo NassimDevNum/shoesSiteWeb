@@ -92,10 +92,10 @@ header{
 section{
     padding: 0 15%;
 }
-
-img{
-    width: 120%;
-}
+/*option */
+/* .home-text{
+    padding-left: 30%;
+} */
 
 .home{
     position: relative;
@@ -138,4 +138,47 @@ img{
     background: var(--text-color);
     border: 2px solid var(--text-color);
     color: #000;
+}
+.home-img img {
+    max-width: 100%;
+}
+
+.main{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.main li img{
+    width: 120px;
+    height: auto;
+    max-width: 100%;
+}
+
+.row
+{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    transition: all .55s ease;
+    cursor: pointer;
+}
+.row:hover{
+    transform: translateY(-8px);
+}
+
+.row2{
+    background: #ff758d;
+}
+.row3{
+    background: #ffd06d;
 }
