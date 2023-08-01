@@ -40,8 +40,9 @@
     <!--accueil design-->
     <section class="home">
         <div class="home-img">
-            <img src="img/blue.png" class="one">
+            <img src="img/product1.png" class="one">
         </div>
+
         <div class="home-text"> 
             <h1>NIKE KD 10<br> Finals</h1>
             <h5>Réactivité & confort</h5>
@@ -53,17 +54,23 @@
 
     <div class="main">
         <div class="row">
-            <li><img src="img/blue.png"></li>
+            <li><img src="img/product1.png" onclick="slider('img/product1.png')"></li>
         </div>
         <div class="row row2">
-            <li><img src="img/green.png"></li>
+            <li><img src="img/product2.png" onclick="slider('img/product2.png')"></li>
         </div>
         <div class="row row3">
-            <li><img src="img/orange.png"></li>
+            <li><img src="img/product3.png" onclick="slider('img/product3.png')"></li>
         </div>
     </div>
 
+    <a href="#" class="bottom">Scroll<i class='bx bx-down-arrow-circle'></i></a>
 
+    <script type="text/javascript">
+        function slider(anything){
+            document.querySelector('.one').src = anything;
+        };
+    </script>
 
 </body>
 </html>
